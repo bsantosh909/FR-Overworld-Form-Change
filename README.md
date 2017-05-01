@@ -1,6 +1,7 @@
 #FR-Overworld-Form-Change
 
 I hereby present you a project I started soon after I started learning Rom-hacking with C.
+(Huge thanks to KDS for his EM-form-cahnge project and being my mentor for C-hacking )
 
 this project includes the form changes handling for a FireRed rom.
 
