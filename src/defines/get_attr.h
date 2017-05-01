@@ -1,0 +1,64 @@
+#ifndef GET_ATTRIBUTE_H
+#define GET_ATTRIBUTE_H
+
+enum attribute_requests
+{
+     ATTR_PID, //0x0
+     ATTR_TID, //0x1
+     ATTR_NAME, //0x2
+     ATTR_FONT_LANG, //0x3
+     ATTR_SANITY, //0x4
+     ATTR_OT_NAME = 0x7,
+     ATTR_MARKS, //0x8
+     ATTR_CHECKSUM, //0x9
+     ATTR_SPECIES  = 0xB,
+     ATTR_HELD_ITEM, //0xC
+     ATTR_ATTACK_1, //0xD
+     ATTR_ATTACK_2, //0xE
+     ATTR_ATTACK_3, //0xF
+     ATTR_ATTACK_4, //0x10
+     ATTR_PP_1, //0x11
+     ATTR_PP_2, //0x12
+     ATTR_PP_3, //0x13
+     ATTR_PP_4, //0x14
+     ATTR_PP_BONUS, //0x15
+     ATTR_COOLNESS, //0x16
+     ATTR_BEAUTY, //0x17
+     ATTR_CUTENESS, //0x18
+     ATTR_EXP, //0x19
+     ATTR_HP_EV, //0x1A
+     ATTR_ATTACK_EV, //0x1B
+     ATTR_DEFENCE_EV, //0x1C
+     ATTR_SPEED_EV, //0x1D
+     ATTR_SP_ATTACK_EV, //0x1E
+     ATTR_SP_DEFENCE_EV, //0x1F
+     ATTR_HAPPINESS, //0x20
+     ATTR_SMARTNESS, //0x21
+     ATTR_POKERUS, //0x22
+     ATTR_CATCH_LOCATION, //0x23
+     ATTR_CATCH_LVL, //0x24
+     ATTR_GAMEOFORIGIN, //0x25
+     ATTR_POKEBALL, //0x26
+     ATTR_HP_IV, //0x27
+     ATTR_ATTACK_IV, //0x28
+     ATTR_DEFENCE_IV, //0x29
+     ATTR_SPEED_IV, //0x2A
+     ATTR_SPECIAL_ATTACK_IV, //0x2B
+     ATTR_SPECIAL_DEFENCE_IV, //0x2C
+     ATTR_IS_EGG, //0x2D
+     ATTR_ABILITY_BIT, //0x2E
+     ATTR_TOUGHNESS, //0x2F
+     ATTR_SHEEN, //0x30
+     ATTR_STATUS_AILMENT = 0x37,
+     ATTR_LEVEL, //0x38
+     ATTR_CURRENT_HP, //0x39
+     ATTR_TOTAL_HP, //0x3A
+     ATTR_ATTACK, //0x3B
+     ATTR_DEFENCE, //0x3C
+     ATTR_SPEED, //0x3D
+     ATTR_SPECIAL_ATTACK, //0x3E
+     ATTR_SPECIAL_DEFENCE, //0x3F
+     ATTR_SPECIES_2, //0x41
+};
+
+#endif /* GET_ATTRIBUTE_H */
