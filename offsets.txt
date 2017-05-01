@@ -1,0 +1,16 @@
+Hoopa_form_change                 0x008000F5
+Shaymin_form_change               0x0080015D
+__bss_end__                       0x00800169
+__bss_start__                     0x00800169
+__end__                           0x00800169
+__text_end                        0x00800169
+__text_start                      0x00800001
+_end                              0x00800169
+item_forme_change_handler_hoopa   0x008000D9
+item_forme_change_handler_shaymin 0x008000BD
+not_affecting_dud                 0x00800025
+run_script_from_item_hoopa        0x0080008D
+run_script_from_item_shaymin      0x0080005D
+shaymin_changed_string            0x00800030
+shaymin_script                    0x00800001
+wont_have_effect_string           0x00800041
