@@ -1,8 +1,12 @@
 #include "defines.h"
 
-// rest lines till I write shaymin form change end are the functions for handling shaymin form //
-
+// ---------- importing the script file ----------- //
 void *shaymin_script();
+void *Hoopa_script();
+//---------- end of import ----------- //
+
+
+// rest lines till I write shaymin form change end are the functions for handling shaymin form //
 // these are the function that is directly got from KDS EM repo so full credits to him for these and also darthathron and EGG for original asm routines ! //
 void run_script_from_item_shaymin(int taskID)
 {
@@ -36,7 +40,6 @@ void Shaymin_form_change()
 
 
 // rest lines till I write shaymin form change end are the functions for handling hoopa form //
-
 // these are the function that is directly got from KDS EM repo so full credits to him for these and also darthathron and EGG for original asm routines ! //
 void run_script_from_item_hoopa(int taskID)
 {
