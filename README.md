@@ -9,4 +9,4 @@ This is just a initial release and is in porgress. It is yet not usable.
 I will notify when it gets usable.
 
 Till then you can support me here
-https://discord.me/pokemon-elites
+https://discord.gg/y8ru3A3
