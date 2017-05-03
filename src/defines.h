@@ -5,6 +5,7 @@
 
 #include "./defines/get_attr.h"
 #include "./defines/pokes.h"
+#include "./defines/moves.h"
 #include "./defines/items.h"
 
 #include "structs.h"
