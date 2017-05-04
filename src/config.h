@@ -27,10 +27,10 @@
 
 // ------------------ Rotom form handling ------------------ //
 #define NO_OF_ALTERNATE_ROTOM_FORMS 6
-#define POKE_ROTOM POKE_TREECKO
+#define POKE_ROTOM POKE_SQUIRTLE
 enum rotom_forms
 {
-    POKE_ROTOM_HEAT=0x116,
+    POKE_ROTOM_HEAT=0x45,
     POKE_ROTOM_WASH,
     POKE_ROTOM_FROST,
     POKE_ROTOM_FAN,

@@ -6,6 +6,7 @@
 u32 get_attr(struct pokemon* poke_address, u8 request, void* dst);
 void set_attr(struct pokemon* poke_address, u8 request, void* new_value);
 void calculate_stats_pokekmon(struct pokemon* poke);
+u16 teach_move_in_available_slot(struct pokemon* , u16 move);
 
 // used for form change //
 void run_after_graphics();

@@ -1,3 +1,28 @@
+/* Variables */
+var_8003 = 0x020370BE;
+var_8004 = 0x020370C0;
+var_8005 = 0x020370C2;
+var_8006 = 0x020370C4;
+var_800E = 0x0203AD30;
+var_800D_lastresult = 0x20370D0;
+
+/* Attributes */
+get_attr = 0x0803FBE8|1;
+set_attr = 0x0804037C|1;
+
+/* Pokemon */
+count_pokemon = 0x08040C3C|1;
+party_player = 0x02024284;
+calculate_stats_pokekmon = 0x0803E47C|1;
+
+/*items*/
+routine_to_run_after_graphics = 0x02039998;
+run_after_graphics = 0x080A103C|1;
+script_env_2_enable = 0x08069940|1;
+script_run = 0x08069AE4|1;
+
+/* move */
+teach_move_in_available_slot = 0x0803E8B0|1;
 
 /*
  * Data
@@ -254,8 +279,7 @@ sub_0804B908 = 0x0804B908|1;
 
 
 create_pokemon = 0x0803DD98|1;
-get_attr = 0x0803FBE8|1;
-set_attr = 0x0804037C|1;
+
 divmod_remainder = 0x081E4684|1;
 rand = 0x08044EC8|1;
 __aeabi_idiv = 0x081E4684|1;
@@ -301,24 +325,3 @@ DMA0_CNT_H = 0x040000BA;
  */
 
 interpreter_state = 0x02036E30;
-
-
-/*
- * Learning
- */
-
-var_8003 = 0x020370BE;
-var_8004 = 0x020370C0;
-var_8005 = 0x020370C2;
-var_8006 = 0x020370C4;
-var_800E = 0x0203AD30;
-var_800D_lastresult = 0x20370D0;
-count_pokemon = 0x08040C3C|1;
-party_player = 0x02024284;
-calculate_stats_pokekmon = 0x0803E47C|1;
-
-/*items*/
-routine_to_run_after_graphics = 0x02039998;
-run_after_graphics = 0x080A103C|1;
-script_env_2_enable = 0x08069940|1;
-script_run = 0x08069AE4|1;
