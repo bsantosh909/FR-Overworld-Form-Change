@@ -13,5 +13,7 @@ void run_after_graphics();
 void script_env_2_enable(int taskID);
 void script_run(void *scriptLoc);
 void task_delete(u8 taskID);
+void* _memcpy(void *dst, void *src, u8 size);
+void* _memset(void *dst, u8 pattern, u8 size);
 
 #endif /* VANILLA_FUNCTIONS */

@@ -229,7 +229,7 @@ obj_and_aux_reset_all = 0x08006B10|1;
 load_var_value = 0x0806E568|1;
 var_set_value = 0x0806E584|1;
 var_get_pointer = 0x0806E454|1;
-memcpy = 0x081E5E78|1;
+_memcpy = 0x081E5E78|1;
 malloc = 0x08002B9C|1;
 malloc_and_clear = 0x08002BB0|1;
 free = 0x08002BC4|1;
@@ -263,8 +263,8 @@ gpu_pal_alloc_new = 0x080089B8|1;
 
 bgid_set_tilemap = 0x08001FA0|1;
 bg_vram_setup = 0x08001658|1;
-mem_set = 0x081E5ED8|1;
-memset = 0x081E5ED8|1;
+_memset = 0x081E5ED8|1;
+
 
 template_instanciate_forward_search = 0x08006F8C|1;
 obj_delete_and_free_tiles = 0x080073DC|1;
