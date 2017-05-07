@@ -3,8 +3,8 @@ var_8003 = 0x020370BE;
 var_8004 = 0x020370C0;
 var_8005 = 0x020370C2;
 var_8006 = 0x020370C4;
-var_800E = 0x0203AD30;
 var_800D_lastresult = 0x20370D0;
+var_800E = 0x0203AD30;
 
 /* Attributes */
 get_attr = 0x0803FBE8|1;
@@ -14,12 +14,18 @@ set_attr = 0x0804037C|1;
 count_pokemon = 0x08040C3C|1;
 party_player = 0x02024284;
 calculate_stats_pokekmon = 0x0803E47C|1;
+get_poke_ability = 0x08040D7C|1; 
 
 /*items*/
 routine_to_run_after_graphics = 0x02039998;
 run_after_graphics = 0x080A103C|1;
 script_env_2_enable = 0x08069940|1;
 script_run = 0x08069AE4|1;
+get_item_x12_battle_function = 0x0809A924|1;
+get_item_lastword = 0x0809AA8C|1;
+item_is_mail = 0x080980F8|1;
+prepare_party_mail_to_give = 0x08097D38|1;
+bag_add_item = 0x0809A084|1;
 
 /* move */
 teach_move_in_available_slot = 0x0803E8B0|1;
