@@ -5,8 +5,22 @@ I hereby present you a project I started soon after I started learning Rom-hacki
 
 this project includes the form changes handling for a FireRed rom.
 
-This is just a initial release and is in porgress. It is yet not usable.
-I will notify when it gets usable.
+This project is almost completed now (actually completed I would say)
+https://www.pokecommunity.com/showthread.php?p=9547750
+This link here has the completed details on using it..
+be sure to look at it.
 
-Till then you can support me here
+If you get any errors you can contact there as well as in the discord link below as well.
+
 https://discord.gg/y8ru3A3
+
+
+AND THANKS FOR THE SUPPORT EVERYONE
+
+
+CREDITS:
+* KDS for helping me out with almost everything and also his EM repo which I simply ported over
+* Egg for helping KDS out and his script run via item routine (EM)
+* Darthatron for his script run via item routine (FR)
+* Game2020 for his scripts are being used in the repo.. 
+* and every other person who helped directly as well as indirectly and motivated me :)
