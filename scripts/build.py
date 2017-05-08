@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 
 from glob import glob
+from pathlib import Path
 import os
 import itertools
 import hashlib
@@ -22,7 +23,7 @@ if PATH == "":
 		sys.exit(1)
 	else:
 		print("Devkit found.")
-
+		
 PREFIX = '/arm-none-eabi-'
 AS = (PATH + PREFIX + 'as')
 CC = (PATH + PREFIX + 'gcc')
@@ -32,8 +33,8 @@ SRC = './src'
 BUILD = './build'
 ASFLAGS = ['-mthumb', '-I', SRC]
 LDFLAGS = ['BPRE.ld', '-T', 'linker.ld']
-CFLAGS = ['-mthumb', '-mno-thumb-interwork', '-mcpu=arm7tdmi',
-		'-fno-inline', '-mlong-calls', '-march=armv4t', '-Wall', '-O2']
+CFLAGS = ['-mthumb', '-mno-thumb-interwork', '-mcpu=arm7tdmi', '-mtune=arm7tdmi',
+'-mno-long-calls', '-march=armv4t', '-Wall', '-Wextra','-Os', '-fira-loop-pressure', '-fipa-pta']
 
 def run_command(cmd):
 	try:
@@ -50,16 +51,16 @@ def make_output_file(filename):
 	
 def process_assembly(in_file):
 	'''Assemble'''
-	print ('Assembling %s' % in_file)
 	out_file = make_output_file(in_file)
+	print ('Assembling %s' % in_file)
 	cmd = [AS] + ASFLAGS + ['-c', in_file, '-o', out_file]
 	run_command(cmd)
 	return out_file
 	
 def process_c(in_file):
 	'''Compile C'''
-	print ('Compiling %s' % in_file)
 	out_file = make_output_file(in_file)
+	print ('Compiling %s' % in_file)
 	cmd = [CC] + CFLAGS + ['-c', in_file, '-o', out_file]
 	run_command(cmd)
 	return out_file
@@ -77,9 +78,13 @@ def objcopy(binary):
 	
 def run_glob(globstr, fn):
 	'''Glob recursively and run the processor function on each file in result'''
-	files = glob(os.path.join(SRC, globstr), recursive = True)
-	return map(fn, files)
-	
+	if sys.version_info > (3, 4):
+		files = glob(os.path.join(SRC, globstr), recursive = True)
+		return map(fn, files)
+	else:
+		files = Path(SRC).glob(globstr)
+		return map(fn, map(str, files))
+
 def main():
 	globs = {
 			'**/*.s': process_assembly,

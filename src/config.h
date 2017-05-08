@@ -3,6 +3,8 @@
 
 #include "types.h"
 
+#define SAVE_FUSEE 0x2090000
+
 // ------------------ Giratina form handling ------------------ //
 #define POKE_GIRATINA POKE_SQUIRTLE
 #define POKE_GIRATINA_O POKE_CHARIZARD
@@ -96,6 +98,15 @@ enum drives
 #define THUNDURUS_THERIAN POKE_RATTATA
 #define LANDORUS_INCARNATE POKE_VENUSAUR
 #define LANDORUS_THERIAN POKE_WEEDLE
+// ------------------ ------------------ ------------------ //
+
+
+// ------------------ KYUREM form handling ------------------ //
+#define POKE_RESHIRAM POKE_WEEDLE
+#define POKE_ZEKROM POKE_RATTATA
+#define POKE_KYUREM POKE_SQUIRTLE
+#define POKE_KYUREM_BLACK POKE_BLASTOISE
+#define POKE_KYUREM_WHITE POKE_CHARIZARD
 // ------------------ ------------------ ------------------ //
 
 

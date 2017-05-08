@@ -8,7 +8,7 @@ u16 var_8005;
 u16 var_8006;
 u16 var_800D_lastresult;
 u16 var_800E;
-
+u8 count_pokemon;
 
 void *routine_to_run_after_graphics;
 

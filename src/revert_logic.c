@@ -2,7 +2,7 @@
 
 void hoopa_revert_logic(void *dst, void *src)
 {
-    _memcpy(dst, src, 0x64);
+    memcpy_(dst, src, 0x64);
     struct pokemon* poke = (struct pokemon *)dst;
     u16 species = get_attr(poke, ATTR_SPECIES,0);
     u16 target_species = 0;

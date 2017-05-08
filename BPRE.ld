@@ -6,15 +6,24 @@ var_8006 = 0x020370C4;
 var_800D_lastresult = 0x20370D0;
 var_800E = 0x0203AD30;
 
+/* these are not the value form BPRE but instead BPEE, it was used here to ignore the compiler issue.. will be soon updated with correct from the BPRE. */
+__udivsi3 = 0x082E7B68|1;
+__umodsi3 = 0x082E7BE0|1;
+__divsi3 = 0x082E7540|1;
+
 /* Attributes */
 get_attr = 0x0803FBE8|1;
 set_attr = 0x0804037C|1;
 
 /* Pokemon */
-count_pokemon = 0x08040C3C|1;
+pokemon_slot_purge = 0x0803D994|1;
+count_pokemon = 0x02024029;
 party_player = 0x02024284;
 calculate_stats_pokekmon = 0x0803E47C|1;
 get_poke_ability = 0x08040D7C|1; 
+species_to_dex_index = 0x08043298|1;
+givepokemon = 0x080A011C|1;
+party_move_up_no_free_slots_in_between = 0x080937DC|1;
 
 /*items*/
 routine_to_run_after_graphics = 0x02039998;
@@ -29,6 +38,10 @@ bag_add_item = 0x0809A084|1;
 
 /* move */
 teach_move_in_available_slot = 0x0803E8B0|1;
+Special_DD_delete_move = 0x080BFBA8|1;
+
+/* Strings */
+str_cpy = 0x08008D84|1;
 
 /*
  * Data
@@ -37,7 +50,6 @@ teach_move_in_available_slot = 0x0803E8B0|1;
 obj_set_rot = 0x08075858|1;
 sub_813A45C = 0x0813A45C|1;
 sub_80BF77C = 0x080BF77C|1;
-givepokemon = 0x080A011C|1;
 rboxes = 0x20204B4;
 ball_tiles = 0x0826056C;
 ball_palettes = 0x082605CC;
@@ -48,7 +60,6 @@ sub_804BF64 = 0x804BF64|1;
 super_sprites_delete_range = 0x080072E8|1;
 sub_8094AD8 = 0x08094AD8|1;
 affine_coefficients = 0x2021BCC;
-str_cpy = 0x08008D84|1;
 buffer1 = 0x02022100;
 buffer2 = 0x02021CD0;
 buffer3 = 0x02021CF0;
@@ -235,10 +246,10 @@ obj_and_aux_reset_all = 0x08006B10|1;
 load_var_value = 0x0806E568|1;
 var_set_value = 0x0806E584|1;
 var_get_pointer = 0x0806E454|1;
-_memcpy = 0x081E5E78|1;
-malloc = 0x08002B9C|1;
+memcpy_ = 0x081E5E78|1;
+malloc_ = 0x08002B9C|1;
 malloc_and_clear = 0x08002BB0|1;
-free = 0x08002BC4|1;
+free_ = 0x08002BC4|1;
 task_add = 0x0807741C|1;
 task_delete = 0x08077508|1;
 set_callback2 = 0x08000544|1;
@@ -269,7 +280,7 @@ gpu_pal_alloc_new = 0x080089B8|1;
 
 bgid_set_tilemap = 0x08001FA0|1;
 bg_vram_setup = 0x08001658|1;
-_memset = 0x081E5ED8|1;
+memset_ = 0x081E5ED8|1;
 
 
 template_instanciate_forward_search = 0x08006F8C|1;
@@ -290,7 +301,6 @@ divmod_remainder = 0x081E4684|1;
 rand = 0x08044EC8|1;
 __aeabi_idiv = 0x081E4684|1;
 __aeabi_uidiv = 0x081E4684|1;
-mem_cpy = 0x081E5E78|1;
 sub_8037A28 = 0x08037A28|1;
 species_to_dex_index = 0x08043298|1;
 
