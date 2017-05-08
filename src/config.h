@@ -3,18 +3,64 @@
 
 #include "types.h"
 
-#define SAVE_FUSEE 0x2090000
+#define ALL_POKES       412     //number of all pokemon
+#define ALL_ITEMS       377     //number of all items
+#define NUM_OF_EVOS     5       //number of evolutions per pokemon
+#define SAVE_FUSEE 0x0          //offset to for saving the fused reshiram
 
-// ------------------ Giratina form handling ------------------ //
-#define POKE_GIRATINA POKE_SQUIRTLE
-#define POKE_GIRATINA_O POKE_CHARIZARD
-// ------------------ ------------------ ------------------ //
+//////////////////////////////////////////////////////////////////////////////
+////                       GIRATINA CONFIG                                ////
+//////////////////////////////////////////////////////////////////////////////
+#define POKE_GIRATINA 3000
+#define POKE_GIRATINA_O 3001
 
 
-// ------------------ ARCEUS form handling ------------------ //
-#define POKE_ARCEUS 1300
+//////////////////////////////////////////////////////////////////////////////
+////                       SHAYMIN CONFIG                                  ////
+//////////////////////////////////////////////////////////////////////////////
+
+#define SHAYMIN_FLY 3002
+#define SHAYMIN_LAND 3003
+
+
+//////////////////////////////////////////////////////////////////////////////
+////                       HOOPA CONFIG                                  ////
+//////////////////////////////////////////////////////////////////////////////
+
+#define HOOPA_UNBOUND 3004
+#define HOOPA_CONFINED 3005
+
+
+//////////////////////////////////////////////////////////////////////////////
+////                       FORCES OF NATURE CONFIG                                  ////
+//////////////////////////////////////////////////////////////////////////////
+
+#define TORNADUS_INCARNATE 3006
+#define TORNADUS_THERIAN 3007
+#define THUNDURUS_INCARNATE 3008
+#define THUNDURUS_THERIAN 3009
+#define LANDORUS_INCARNATE 3010
+#define LANDORUS_THERIAN 3011
+
+
+//////////////////////////////////////////////////////////////////////////////
+////                       KYUREM CONFIG                                  ////
+//////////////////////////////////////////////////////////////////////////////
+
+#define POKE_RESHIRAM 3012
+#define POKE_ZEKROM 3013
+#define POKE_KYUREM 3014
+#define POKE_KYUREM_BLACK 3015
+#define POKE_KYUREM_WHITE 3016
+
+
+//////////////////////////////////////////////////////////////////////////////
+////                       ARCEUS CONFIG                                  ////
+//////////////////////////////////////////////////////////////////////////////
+
+#define POKE_ARCEUS 3017
 enum arceus_formes_idx {
-    POKE_ARCEUS_FIGHTING = 1301,  // This a enum. The subsequent value of indexes will be 1302, 1303 etc.
+    POKE_ARCEUS_FIGHTING = 3018,  // This a enum. The subsequent value of indexes will be 1302, 1303 etc.
     POKE_ARCEUS_FLYING,
     POKE_ARCEUS_POISON,
     POKE_ARCEUS_GROUND,
@@ -32,14 +78,14 @@ enum arceus_formes_idx {
     POKE_ARCEUS_DARK,
     POKE_ARCEUS_FAIRY,
 };
-// ------------------ ------------------ ------------------ //
 
-
-// ------------------ SILVALLY form handling ------------------ //
+//////////////////////////////////////////////////////////////////////////////
+////                       SILVALLY CONFIG                                ////
+//////////////////////////////////////////////////////////////////////////////
 #define ABILITY_RKS_SYSTEM 240
-#define POKE_SILVALLY 1340
+#define POKE_SILVALLY 3040
 enum silvally_forms_idx {
-    POKE_SILVALLY_FIGHTING = 1341,
+    POKE_SILVALLY_FIGHTING = 3041,
     POKE_SILVALLY_FLYING,
     POKE_SILVALLY_POISON,
     POKE_SILVALLY_GROUND,
@@ -57,13 +103,13 @@ enum silvally_forms_idx {
     POKE_SILVALLY_DARK,
     POKE_SILVALLY_FAIRY,
 };
-// ------------------ ------------------ ------------------ //
 
-
-// ------------------ GENESECT form handling ------------------ //
-#define POKE_GENESECT 1380
+//////////////////////////////////////////////////////////////////////////////
+////                       GENESECT CONFIG                                ////
+//////////////////////////////////////////////////////////////////////////////
+#define POKE_GENESECT 3100
 enum genesect_formes{
-    POKE_GENESECT_DOUSE = 1381,
+    POKE_GENESECT_DOUSE = 3101,
     POKE_GENESECT_BURN,
     POKE_GENESECT_CHILL,
     POKE_GENESECT_SHOCK
@@ -76,64 +122,30 @@ enum drives
     CHILL_DRIVE_EFFECT,
     SHOCK_DRIVE_EFFECT
 };
-// ------------------ ------------------ ------------------ //
 
 
-// ------------------ shaymin form handling ------------------ //
-#define SHAYMIN_FLY POKE_BLASTOISE
-#define SHAYMIN_LAND POKE_SQUIRTLE
-// ------------------ ------------------ ------------------ //
+//////////////////////////////////////////////////////////////////////////////
+////                        ROTOM CONFIG                                  ////
+//////////////////////////////////////////////////////////////////////////////
+#define POKE_ROTOM 3110
 
-
-// ------------------ hoopa form handling ------------------ //
-#define HOOPA_UNBOUND POKE_CHARIZARD
-#define HOOPA_CONFINED POKE_RATTATA
-// ------------------ ------------------ ------------------ //
-
-
-// ------------------ therain trio form handling ------------------ //
-#define TORNADUS_INCARNATE POKE_CHARIZARD
-#define TORNADUS_THERIAN POKE_SQUIRTLE
-#define THUNDURUS_INCARNATE POKE_BLASTOISE
-#define THUNDURUS_THERIAN POKE_RATTATA
-#define LANDORUS_INCARNATE POKE_VENUSAUR
-#define LANDORUS_THERIAN POKE_WEEDLE
-// ------------------ ------------------ ------------------ //
-
-
-// ------------------ KYUREM form handling ------------------ //
-#define POKE_RESHIRAM POKE_WEEDLE
-#define POKE_ZEKROM POKE_RATTATA
-#define POKE_KYUREM POKE_SQUIRTLE
-#define POKE_KYUREM_BLACK POKE_BLASTOISE
-#define POKE_KYUREM_WHITE POKE_CHARIZARD
-// ------------------ ------------------ ------------------ //
-
-
-// ------------------ Rotom form handling ------------------ //
-#define NO_OF_ALTERNATE_ROTOM_FORMS 6
-#define POKE_ROTOM POKE_SQUIRTLE
 enum rotom_forms
 {
-    POKE_ROTOM_HEAT=0x45,
+    POKE_ROTOM_HEAT=3111,
     POKE_ROTOM_WASH,
     POKE_ROTOM_FROST,
     POKE_ROTOM_FAN,
     POKE_ROTOM_MOW
 };
-// ------------------ ------------------ ------------------ //
 
-
-// ------------------ Deoxys form handling ------------------ //
+//////////////////////////////////////////////////////////////////////////////
+////                        DEOXYS CONFIG                                 ////
+//////////////////////////////////////////////////////////////////////////////
 enum deoxys_forms
 {
-    POKE_DEOXYS_ATTACK=1450,
+    POKE_DEOXYS_ATTACK=3120,
     POKE_DEOXYS_DEFENSE,
     POKE_DEOXYS_SPEED,
 };
-
-// ------------------ ------------------ ------------------ //
-
-
 
 #endif /* CONFIG_H */
